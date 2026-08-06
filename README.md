@@ -7,11 +7,15 @@ HR Company report.
 ## 🎯 Objectives
 
 
-Apply intermediate SQL techniques including:
-Aggregations
-Multi-table JOINs
-Common Table Expressions (CTEs)
-Window functions (ROW_NUMBER, ranking logic)
+<li>Analyze </li>
+<li>Identify </li>
+<li>Evaluate </li>
+<li>Apply intermediate SQL techniques including:
+    <li>Aggregations</li>
+    <li>Multi-table JOINs</li>
+    <li>Common Table Expressions (CTEs)</li>
+    <li>Window functions (ROW_NUMBER, ranking logic)</li>
+</ul>
 
 ## 📋 Files
 database.sql
