@@ -48,17 +48,19 @@ shop_items	Includes
 
 ## 💻 SQL Query
 ```sql
-SELECT e.name,
-       d.department name,
-       s.wage
-FROM employees e
-JOIN department d
-    ON e.Employee_ID = d.Employee_ID
-JOIN salary s
-    ON e.Employee_ID = s.Employee_ID
-ON e.Employee_ID = s.Employee_ID
-WHERE s.Wage > AVG(s.Wage) OVER (
-    PARTITION BY d.Department_Name
-)
-ORDER BY d.Department_Name, s.Wage DESC;
+SELECT *
+FROM (
+    SELECT
+        e."Name",
+        d."Department Name",
+        s.wage,
+         ROUND(AVG(s.wage) OVER (PARTITION BY d."Department Name"), 2) AS avg_wage
+    FROM employees e
+    JOIN department d ON e."Employee ID" = d."Employee ID"
+    JOIN salary s ON e."Employee ID" = s."Employee ID"
+) q
+WHERE q.wage > q.avg_wage
+ORDER BY q."Department Name", q.wage DESC;
+
+;
 ```
