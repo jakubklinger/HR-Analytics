@@ -1,10 +1,10 @@
 HR Company report.
 
-📌 Project Overview
+## 📌 Project Overview
 
 
 
-🎯 Objectives
+## 🎯 Objectives
 
 
 Apply intermediate SQL techniques including:
@@ -13,17 +13,17 @@ Multi-table JOINs
 Common Table Expressions (CTEs)
 Window functions (ROW_NUMBER, ranking logic)
 
-📋 Files
+## 📋 Files
 database.sql
 queries.sql
 
-🗄️ Tables
+## 🗄️ Tables
 Table	Description
 shop_customers	Stores 
 shop_orders	Contains 
 shop_items	Includes 
 
-🛠️ Stack
+## 🛠️ Stack
 <ul>
 <li>PostgreSQL 18.3</li>
 <li>pgAdmin 4</li>
@@ -31,17 +31,18 @@ shop_items	Includes
 <li>Microsoft Excel</li>
 </ul>
 
-</> Example Queries
-📊 Employees salary compared to the departments avergae
+## </> Example Queries
 
-🎯Business Question
+📊**Employees salary compared to the department's average**
 
-
-
-🔍 Approach
+## 🎯Business Question
 
 
-💻 SQL Query
+
+## 🔍 Approach
+
+
+## 💻 SQL Query
 ```sql
 SELECT e.name,
        d.department name,
