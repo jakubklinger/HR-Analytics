@@ -18,8 +18,8 @@ HR Company report.
 </ul>
 
 ## 📋 Files
-database.sql
-queries.sql
+- database.sql
+- queries.sql
 
 ## 🗄️ Tables
 Table	Description
@@ -52,9 +52,13 @@ SELECT e.name,
        d.department name,
        s.wage
 FROM employees e
-WHERE salary.Wage > (
-    SELECT AVG(Wage)
-    FROM employees e2
-    WHERE e1.department_id = e2.department_id
-);
+JOIN department d
+    ON e.Employee_ID = d.Employee_ID
+JOIN salary s
+    ON e.Employee_ID = s.Employee_ID
+ON e.Employee_ID = s.Employee_ID
+WHERE s.Wage > AVG(s.Wage) OVER (
+    PARTITION BY d.Department_Name
+)
+ORDER BY d.Department_Name, s.Wage DESC;
 ```
