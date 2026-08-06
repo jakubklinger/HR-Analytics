@@ -1,4 +1,4 @@
-Computer Shop SQL Sales Analysis
+HR Company report.
 
 📌 Project Overview
 
