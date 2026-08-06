@@ -24,10 +24,12 @@ shop_orders	Contains
 shop_items	Includes 
 
 🛠️ Stack
-PostgreSQL 18.3
-pgAdmin 4
-DBeaver 26.1.0
-Microsoft Excel
+<ul>
+<li>PostgreSQL 18.3</li>
+<li>pgAdmin 4</li>
+<li>DBeaver 26.1.0</li>
+<li>Microsoft Excel</li>
+</ul>
 
 </> Example Queries
 📊 Employees salary compared to the departments avergae
