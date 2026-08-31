@@ -55,3 +55,43 @@ JOIN salary_new
   ON salary_new."Employee ID" = employees_new."Employee ID"
 GROUP BY employees_new."Department Name";
 ```
+
+📊**Number of employees hired each year**
+
+## 🎯Business Question
+
+
+
+## 🔍 Approach
+
+
+## 💻 SQL Query
+```sql
+SELECT
+    substr("Date hired", 1, 4) AS hire_year,
+    COUNT(*) AS employees_hired
+FROM employees_new
+GROUP BY hire_year
+ORDER BY hire_year;
+```
+
+📊**Retirement plan partication per department**
+
+## 🎯Business Question
+
+
+
+## 🔍 Approach
+
+
+## 💻 SQL Query
+```sql
+SELECT
+    employees_new."Department Name",
+    SUM(CASE WHEN salary_new."Retirement Plan Voluntary" = 'Yes' THEN 1 ELSE 0 END) AS enroled_in_retirement_plan ,
+    SUM(CASE WHEN salary_new."Retirement Plan Voluntary" = 'No'  THEN 1 ELSE 0 END) AS not_enroled_in_retirement_plan
+FROM employees_new
+JOIN salary_new ON employees_new."Employee ID" = salary_new ."Employee ID"
+GROUP BY employees_new."Department Name"
+ORDER BY employees_new."Department Name";
+```
