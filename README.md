@@ -75,7 +75,7 @@ GROUP BY hire_year
 ORDER BY hire_year;
 ```
 
-📊**Retirement plan partication per department**
+📊**Retirement plan partication**
 
 ## 🎯Business Question
 
@@ -94,4 +94,66 @@ FROM employees_new
 JOIN salary_new ON employees_new."Employee ID" = salary_new ."Employee ID"
 GROUP BY employees_new."Department Name"
 ORDER BY employees_new."Department Name";
+```
+
+📊**Average wage by hire year**
+
+## 🎯Business Question
+
+
+
+## 🔍 Approach
+
+
+## 💻 SQL Query
+```sql
+SELECT
+    substr(employees_new."Date hired", 1, 4) AS hire_year,
+    ROUND(AVG(salary_new.Wage), 2) AS avg_salary
+FROM employees_new
+JOIN salary_new
+    ON salary_new."Employee ID" = employees_new."Employee ID"
+GROUP BY hire_year
+ORDER BY hire_year ASC;
+```
+
+📊**Top earning employee in each department**
+
+## 🎯Business Question
+
+
+
+## 🔍 Approach
+
+
+## 💻 SQL Query
+```sql
+WITH employee_wages AS (
+    SELECT
+en.Name, 
+en."Employee ID", 
+en."Department Name", 
+sn.Wage
+
+    FROM employees_new en
+    JOIN salary_new sn
+        ON en."Employee ID" = sn."Employee ID"
+  
+),
+ranked_employees AS (
+    SELECT
+        Name,
+        "Department Name",
+Wage,
+        ROW_NUMBER() OVER (
+            PARTITION BY "Department Name"
+            ORDER BY Wage DESC
+        ) AS rank_num
+    FROM employee_wages
+)SELECT
+Name,
+"Department Name",
+Wage
+   FROM ranked_employees
+WHERE rank_num = 1;
 ```
