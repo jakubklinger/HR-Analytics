@@ -23,9 +23,9 @@ HR Company report.
 
 ## 🗄️ Tables
 Table	Description
-shop_customers	Stores 
-shop_orders	Contains 
-shop_items	Includes 
+employees_new	Stores 
+salary_new Contains 
+department_new	Includes 
 
 ## 🛠️ Stack
 <ul>
@@ -37,7 +37,7 @@ shop_items	Includes
 
 ## </> Example Queries
 
-📊**Employees salary compared to the department's average**
+📊**Average Salary by Department**
 
 ## 🎯Business Question
 
@@ -48,19 +48,10 @@ shop_items	Includes
 
 ## 💻 SQL Query
 ```sql
-SELECT *
-FROM (
-    SELECT
-        e."Name",
-        d."Department Name",
-        s.wage,
-         ROUND(AVG(s.wage) OVER (PARTITION BY d."Department Name"), 2) AS avg_wage
-    FROM employees e
-    JOIN department d ON e."Employee ID" = d."Employee ID"
-    JOIN salary s ON e."Employee ID" = s."Employee ID"
-) q
-WHERE q.wage > q.avg_wage
-ORDER BY q."Department Name", q.wage DESC;
-
-;
+SELECT employees_new."Department Name",
+       ROUND(AVG(salary_new.Wage), 2) AS avg_wage
+FROM employees_new
+JOIN salary_new
+  ON salary_new."Employee ID" = employees_new."Employee ID"
+GROUP BY employees_new."Department Name";
 ```
