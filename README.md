@@ -2,18 +2,20 @@ HR Company report.
 
 ## 📌 Project Overview
 
-
+This project demonstrates SQL-based HR analytics using a fictional employee dataset.
+The goal is to evaluate salary distribution, hiring trends, department performance and retirement plan participation.
+The analysis transforms raw HR data into insights supporting decisions in compensation strategy, workforce planning and benefits optimization.
 
 ## 🎯 Objectives
 
 
-<li>Analyze </li>
-<li>Identify </li>
-<li>Evaluate </li>
+<li>Analyze the salary across different departmenys</li>
+<li>Evaluate the particaption in a retirement plan </li>
 <li>Apply intermediate SQL techniques including:
     <li>Aggregations</li>
     <li>Multi-table JOINs</li>
     <li>Common Table Expressions (CTEs)</li>
+    <li> CASE WHEN - to define the results based on the condition </li>
     <li>Window functions (ROW_NUMBER, ranking logic)</li>
 </ul>
 
@@ -41,10 +43,13 @@ department_new	Includes
 
 ## 🎯Business Question
 
-
+What is the average salary in each department? This infomation can influence further wage strategies to ensure satisfaction of the employees while keeping the business costs in mind.
 
 ## 🔍 Approach
 
+The analysis was performed in two steps:
+1. Round the average value of salary
+2. Group the results by the department name 
 
 ## 💻 SQL Query
 ```sql
@@ -59,7 +64,7 @@ GROUP BY en."Department Name";
 📊**Number of employees hired each year**
 
 ## 🎯Business Question
-
+How thi
 
 
 ## 🔍 Approach
