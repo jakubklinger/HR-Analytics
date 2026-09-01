@@ -85,7 +85,7 @@ ORDER BY hire_year;
 📊**Retirement plan participation**
 
 ## 🎯Business Question
-
+What is the level of participation to the retirement plan? This information can 
 
 
 ## 🔍 Approach
@@ -107,7 +107,7 @@ ORDER BY en."Department Name";
 
 ## 🎯Business Question
 
-How the wages are shapping for the employees hired each year? This infomation might help in determining if the wages of long time employees should be raised.
+How the wages are shapping for the employees hired each year? This infomation might help in determining if the wages of long time employees should be raised. 
 
 
 ## 🔍 Approach
@@ -128,12 +128,13 @@ ORDER BY hire_year ASC;
 📊**Top earning employee in each department**
 
 ## 🎯Business Question
-
-
+Who is the best earning employee in each department? This calculation can help in evaluating the 
 
 ## 🔍 Approach
 
-
+The analysis was performed in three steps:
+1. CTE was used to 
+2. Group the results by the department name
 ## 💻 SQL Query
 ```sql
 WITH employee_wages AS (
