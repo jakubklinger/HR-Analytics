@@ -9,13 +9,14 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 ## 🎯 Objectives
 
 
-<li>Analyze the salary across different departmenys</li>
-<li>Evaluate the particaption in a retirement plan </li>
+<li>Analyze the salary across different departments</li>
+<li>Identify hiring trends over time</li>
+<li>Evaluate the participation in a retirement plan </li>
 <li>Apply intermediate SQL techniques including:
     <li>Aggregations</li>
     <li>Multi-table JOINs</li>
     <li>Common Table Expressions (CTEs)</li>
-    <li> CASE WHEN - to define the results based on the condition </li>
+    <li> CASE WHEN - defining the results based on the condition </li>
     <li>Window functions (ROW_NUMBER, ranking logic)</li>
 </ul>
 
@@ -25,9 +26,9 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 
 ## 🗄️ Tables
 Table	Description
-employees_new	Stores 
-salary_new Contains 
-department_new	Includes 
+employees_new Stores employee details including name, department, and hire date
+salary_new 	Contains wage, compensation rate, and retirement plan participation
+department_new	Includes department IDs and department names
 
 ## 🛠️ Stack
 <ul>
@@ -47,9 +48,9 @@ What is the average salary in each department? This infomation can influence fur
 
 ## 🔍 Approach
 
-The analysis was performed in two steps:
-1. Round the average value of salary
-2. Group the results by the department name 
+1. Join employee and salary data 
+2. Calculate and round the average value of salary
+3. Group results by department name 
 
 ## 💻 SQL Query
 ```sql
@@ -64,13 +65,14 @@ GROUP BY en."Department Name";
 📊**Number of employees hired each year**
 
 ## 🎯Business Question
-What is the hiring trend in recent years? Answering that can influence company change their employment strategy.
+How many employees were hired each year, and what does this reveal about workforce expansion or contraction? Answering that can influence company change their employment strategy.
 
 
 ## 🔍 Approach
 The analysis was performed in two steps:
-1. Use SUBSTR function to track the hire year
-2. Group the results by the department name
+1. Use SUBSTR operator to extract the hire year
+2. Count employees hired per year
+3. Group results chronologically
 
 ## 💻 SQL Query
 ```sql
@@ -90,13 +92,16 @@ What is the level of participation to the retirement plan? This information can 
 
 ## 🔍 Approach
 
+1. Use CASE WHEN logic for summing the employees that participate in the retirement plan
+2. CASE WHEN logic was reapplied to calculate how many employees aren't enrolled in the plan
+3. Group results by department 
 
 ## 💻 SQL Query
 ```sql
 SELECT
     en."Department Name",
-    SUM(CASE WHEN sn."Retirement Plan Voluntary" = 'Yes' THEN 1 ELSE 0 END) AS enroled_in_retirement_plan ,
-    SUM(CASE WHEN sn."Retirement Plan Voluntary" = 'No'  THEN 1 ELSE 0 END) AS not_enroled_in_retirement_plan
+    SUM(CASE WHEN sn."Retirement Plan Voluntary" = 'Yes' THEN 1 ELSE 0 END) AS enrolled_in_retirement_plan ,
+    SUM(CASE WHEN sn."Retirement Plan Voluntary" = 'No'  THEN 1 ELSE 0 END) AS not_enrolled_in_retirement_plan
 FROM employees_new en
 JOIN salary_new sn ON en."Employee ID" = sn."Employee ID"
 GROUP BY en."Department Name"
@@ -107,11 +112,14 @@ ORDER BY en."Department Name";
 
 ## 🎯Business Question
 
-How the wages are shapping for the employees hired each year? This infomation might help in determining if the wages of long time employees should be raised. 
-
+How wages differ for employees hired each year? This information might help in determining if the salary adjustments are necessary.
 
 ## 🔍 Approach
 
+The analysis was performed in three steps:
+1. Used SUBSTR function to track the hire year
+2. Rounded average of wages was calculated
+3. Results were grouped by a hire year and shown in an ascending order (2015,2016,2017...)
 
 ## 💻 SQL Query
 ```sql
@@ -128,14 +136,14 @@ ORDER BY hire_year ASC;
 📊**Top earning employee in each department**
 
 ## 🎯Business Question
-Who is the best earning employee in each department? This calculation can help in evaluating the 
+Who is the highest-earning employee in each department? This calculation can help in evaluating the wages across all departments.
 
 ## 🔍 Approach
 
-The analysis was performed in three steps:
-1. CTE was used to create temporary values for reference.
-2. Next subquery was established to rank the employees by their wages using the window function.
-3. Group the results by the department name.
+1. CTE was used to create temporary values for reference
+2. Rank the employees within each department by their wages using the window function
+3. Showing the highest record (rank num = 1) for each department (employee with the highest salary)
+
 ## 💻 SQL Query
 ```sql
 WITH employee_wages AS (
