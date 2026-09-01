@@ -48,12 +48,12 @@ department_new	Includes
 
 ## 💻 SQL Query
 ```sql
-SELECT employees_new."Department Name",
+SELECT en."Department Name",
        ROUND(AVG(salary_new.Wage), 2) AS avg_wage
-FROM employees_new
-JOIN salary_new
-  ON salary_new."Employee ID" = employees_new."Employee ID"
-GROUP BY employees_new."Department Name";
+FROM employees_new en
+JOIN salary_new sn
+  ON sn."Employee ID" = en."Employee ID"
+GROUP BY en."Department Name";
 ```
 
 📊**Number of employees hired each year**
@@ -75,7 +75,7 @@ GROUP BY hire_year
 ORDER BY hire_year;
 ```
 
-📊**Retirement plan partication**
+📊**Retirement plan participation**
 
 ## 🎯Business Question
 
@@ -87,13 +87,13 @@ ORDER BY hire_year;
 ## 💻 SQL Query
 ```sql
 SELECT
-    employees_new."Department Name",
-    SUM(CASE WHEN salary_new."Retirement Plan Voluntary" = 'Yes' THEN 1 ELSE 0 END) AS enroled_in_retirement_plan ,
-    SUM(CASE WHEN salary_new."Retirement Plan Voluntary" = 'No'  THEN 1 ELSE 0 END) AS not_enroled_in_retirement_plan
-FROM employees_new
-JOIN salary_new ON employees_new."Employee ID" = salary_new ."Employee ID"
-GROUP BY employees_new."Department Name"
-ORDER BY employees_new."Department Name";
+    en."Department Name",
+    SUM(CASE WHEN sn."Retirement Plan Voluntary" = 'Yes' THEN 1 ELSE 0 END) AS enroled_in_retirement_plan ,
+    SUM(CASE WHEN sn."Retirement Plan Voluntary" = 'No'  THEN 1 ELSE 0 END) AS not_enroled_in_retirement_plan
+FROM employees_new en
+JOIN salary_new sn ON en."Employee ID" = sn."Employee ID"
+GROUP BY en."Department Name"
+ORDER BY en."Department Name";
 ```
 
 📊**Average wage by hire year**
@@ -108,11 +108,11 @@ ORDER BY employees_new."Department Name";
 ## 💻 SQL Query
 ```sql
 SELECT
-    substr(employees_new."Date hired", 1, 4) AS hire_year,
-    ROUND(AVG(salary_new.Wage), 2) AS avg_salary
-FROM employees_new
-JOIN salary_new
-    ON salary_new."Employee ID" = employees_new."Employee ID"
+    substr(en."Date hired", 1, 4) AS hire_year,
+    ROUND(AVG(sn.Wage), 2) AS avg_salary
+FROM employees_new en
+JOIN salary_new sn
+    ON sn."Employee ID" = en."Employee ID"
 GROUP BY hire_year
 ORDER BY hire_year ASC;
 ```
