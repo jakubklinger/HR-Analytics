@@ -85,7 +85,7 @@ ORDER BY hire_year;
 📊**Retirement plan participation**
 
 ## 🎯Business Question
-What is the level of participation to the retirement plan? This information can 
+What is the level of participation to the retirement plan? This information can help in evaluating benefits strategy. 
 
 
 ## 🔍 Approach
@@ -133,8 +133,9 @@ Who is the best earning employee in each department? This calculation can help i
 ## 🔍 Approach
 
 The analysis was performed in three steps:
-1. CTE was used to 
-2. Group the results by the department name
+1. CTE was used to create temporary values for reference.
+2. Next subquery was established to rank the employees by their wages using the window function.
+3. Group the results by the department name.
 ## 💻 SQL Query
 ```sql
 WITH employee_wages AS (
