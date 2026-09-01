@@ -1,4 +1,4 @@
-HR Company report.
+📊 **Computer Shop SQL Sales Analysis**
 
 ## 📌 Project Overview
 
@@ -64,11 +64,13 @@ GROUP BY en."Department Name";
 📊**Number of employees hired each year**
 
 ## 🎯Business Question
-How thi
+What is the hiring trend in recent years? Answering that can influence company change their employment strategy.
 
 
 ## 🔍 Approach
-
+The analysis was performed in two steps:
+1. Use SUBSTR function to track the hire year
+2. Group the results by the department name
 
 ## 💻 SQL Query
 ```sql
