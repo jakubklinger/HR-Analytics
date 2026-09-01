@@ -107,6 +107,7 @@ ORDER BY en."Department Name";
 
 ## 🎯Business Question
 
+How the wages are shapping for the employees hired each year? This infomation might help in determining if the wages of long time employees should be raised.
 
 
 ## 🔍 Approach
