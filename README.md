@@ -8,6 +8,7 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 
 ## 🎯 Objectives
 
+<ul>
 <li>Analyze the salary across different departments</li>
 <li>Identify hiring trends over time</li>
 <li>Evaluate the participation in a retirement plan </li>
@@ -18,7 +19,6 @@ The analysis transforms raw HR data into insights supporting decisions in compen
     <li> CASE WHEN - defining the results based on the condition </li>
     <li>Window functions (ROW_NUMBER, ranking logic)</li>
 </ul>
-
 
 ## 📋 Files
 - department_new.sql
