@@ -138,6 +138,8 @@ GROUP BY hire_year
 ORDER BY hire_year ASC;
 ```
 
+<img width="212" height="196" alt="image" src="https://github.com/user-attachments/assets/ee38fa0d-d5db-4b1d-b513-c9535ae72c36" />
+
 <h2> 📊 Top earning employee in each department </h2>
 
 ## 🎯Business Question
