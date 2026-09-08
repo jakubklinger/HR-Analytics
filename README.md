@@ -1,4 +1,4 @@
-📊 **HR Analytics Project*
+📊 **HR Analytics Project**
 
 ## 📌 Project Overview
 
