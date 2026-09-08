@@ -63,6 +63,7 @@ JOIN salary_new sn
   ON sn."Employee ID" = en."Employee ID"
 GROUP BY en."Department Name";
 ```
+<img width="251" height="146" alt="image" src="https://github.com/user-attachments/assets/4e223b5c-a99c-4288-be77-a47e6f9a52c8" />
 
 📊**Number of employees hired each year**
 
@@ -85,6 +86,7 @@ FROM employees_new
 GROUP BY hire_year
 ORDER BY hire_year;
 ```
+<img width="239" height="195" alt="image" src="https://github.com/user-attachments/assets/301c2cb1-e9e5-4e2b-920f-e947cb12f8dc" />
 
 📊**Retirement plan participation**
 
@@ -109,6 +111,7 @@ JOIN salary_new sn ON en."Employee ID" = sn."Employee ID"
 GROUP BY en."Department Name"
 ORDER BY en."Department Name";
 ```
+<img width="574" height="149" alt="image" src="https://github.com/user-attachments/assets/37a1a7b5-0d4f-41fd-9706-aa5db6a9158d" />
 
 📊**Average wage by hire year**
 
