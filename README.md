@@ -185,7 +185,7 @@ WHERE rank_num = 1;
 ```
 <img width="312" height="148" alt="image" src="https://github.com/user-attachments/assets/1f3ea5a2-8dd9-4bb9-a1d1-8fd756e2ff89" />
 
-📈 Overview of Findings:
+<h2> 📈 Overview of Findings: </h2>
 
 <ul>
 <li>Legal department shown the highest average salary of 5273.5, while Customer Support team had the lowest average of 4414.0</li>
@@ -194,7 +194,7 @@ WHERE rank_num = 1;
 <li>Half of all departments (4 out of 8) have a low participation in the voluntary retirement plan</li>
 </ul>
 
-💡 Key Insight:
+## 💡 Key Insight:
 Consistent evaluation of salaries across all departments can help in ensuring that wages are up to the industry and market standards. Year to year evaluations are necessary to keep employees' satisfaction and good business practices. Review of the existing work benefits is required to verify if they align with employee needs.
 
-✉ ---Contact me--- For any questions, please contact me at jakub.klinger1996@gmail.com.
+## ✉ ---Contact me--- For any questions, please contact me at jakub.klinger1996@gmail.com.
