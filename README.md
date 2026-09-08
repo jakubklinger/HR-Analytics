@@ -42,7 +42,7 @@ department_new	Includes department IDs and department names
 
 ## </> Example Queries
 
-📊**Average Salary by Department**
+<h2>📊**Average Salary by Department**</h2>
 
 ## 🎯Business Question
 
