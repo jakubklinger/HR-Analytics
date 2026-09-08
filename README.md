@@ -1,4 +1,4 @@
-📊 **Computer Shop SQL Sales Analysis**
+📊 **HR Analytics Project*
 
 ## 📌 Project Overview
 
