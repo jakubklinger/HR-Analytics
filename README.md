@@ -182,11 +182,13 @@ Wage
    FROM ranked_employees
 WHERE rank_num = 1;
 ```
-📈 Overview of Findings 
+<img width="312" height="148" alt="image" src="https://github.com/user-attachments/assets/1f3ea5a2-8dd9-4bb9-a1d1-8fd756e2ff89" />
 
-📌 Business Impact: 
-💡 Key Insight
+📈 Overview of Findings:
 
-Evaluation of salaries across all departments is an important step in 
+Legal department shown the highest average salary of 5273.5, while Customer Support team had the lowest average of 4414.0. Employees hired in 2024 have an average monthly pay of 5626.83 while new associates hired in 2025 have slightly lower average of 5512.5. Employees hired in 2022 have noticaebly low salary average of 3767.78. Half of the departments (4 out of 8) have a low participation in the voluntary retirement plan.
+
+💡 Key Insight:
+Evaluation of salaries across all departments can help in ensuring that wages are up to the industry and market standards. Year to year evaluations are necessary to keep employees' satisfaction and good business practices. Review of the existing work benefits is required to verify if they are meeting the needs of workers.
 
 ✉ ---Contact me--- For any questions, please contact me at jakub.klinger1996@gmail.com.
