@@ -72,7 +72,7 @@ How many employees were hired each year, and what does this reveal about workfor
 
 
 ## 🔍 Approach
-The analysis was performed in two steps:
+
 1. Use SUBSTR operator to extract the hire year
 2. Count employees hired per year
 3. Group results chronologically
@@ -121,7 +121,6 @@ How wages differ for employees hired each year? This information might help in d
 
 ## 🔍 Approach
 
-The analysis was performed in three steps:
 1. Used SUBSTR function to track the hire year
 2. Rounded average of wages was calculated
 3. Results were grouped by a hire year and shown in an ascending order (2015,2016,2017...)
