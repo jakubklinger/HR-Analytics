@@ -13,11 +13,11 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 <li>Identify hiring trends over time</li>
 <li>Evaluate the participation in a retirement plan </li>
 <li>Apply intermediate SQL techniques, including:
-    <li>Aggregations</li>
-    <li>Multi-table JOINs</li>
-    <li>Common Table Expressions (CTEs)</li>
-    <li> CASE WHEN - conditional logic </li>
-    <li>Window functions (ROW_NUMBER)</li>
+     <li>Aggregations</li>
+     <li>Multi-table JOINs</li>
+     <li>Common Table Expressions (CTEs)</li>
+     <li> CASE WHEN - conditional logic </li>
+     <li>Window functions (ROW_NUMBER)</li>
 </ul>
 
 ## 📋 Files
