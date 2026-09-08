@@ -42,9 +42,9 @@ department_new	Includes department IDs and department names
 
 ## </> Example Queries
 
-<h2>📊Average Salary by Department</h2>
+<h2>📊 Average Salary by Department</h2>
 
-## 🎯Business Question
+## 🎯 Business Question
 
 What is the average salary in each department? This infomation can influence further wage strategies to ensure satisfaction of the employees while keeping the business costs in mind.
 
@@ -65,7 +65,7 @@ GROUP BY en."Department Name";
 ```
 <img width="251" height="146" alt="image" src="https://github.com/user-attachments/assets/4e223b5c-a99c-4288-be77-a47e6f9a52c8" />
 
-📊**Number of employees hired each year**
+<h2> 📊Number of employees hired each year </h2>
 
 ## 🎯Business Question
 How many employees were hired each year, and what does this reveal about workforce expansion or contraction? Answering that can influence company change their employment strategy.
@@ -88,7 +88,7 @@ ORDER BY hire_year;
 ```
 <img width="239" height="195" alt="image" src="https://github.com/user-attachments/assets/301c2cb1-e9e5-4e2b-920f-e947cb12f8dc" />
 
-📊**Retirement plan participation**
+<h2> 📊 Retirement plan participation </h2>
 
 ## 🎯Business Question
 What is the level of participation to the retirement plan? This information can help in evaluating benefits strategy. 
@@ -113,7 +113,7 @@ ORDER BY en."Department Name";
 ```
 <img width="574" height="149" alt="image" src="https://github.com/user-attachments/assets/37a1a7b5-0d4f-41fd-9706-aa5db6a9158d" />
 
-📊**Average wage by hire year**
+<h2> 📊 Average wage by hire year </h2>
 
 ## 🎯Business Question
 
@@ -138,7 +138,7 @@ GROUP BY hire_year
 ORDER BY hire_year ASC;
 ```
 
-📊**Top earning employee in each department**
+<h2> 📊 Top earning employee in each department </h2>
 
 ## 🎯Business Question
 Who is the highest-earning employee in each department? This calculation can help in evaluating the wages across all departments.
