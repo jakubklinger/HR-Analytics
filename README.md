@@ -46,7 +46,7 @@ department_new	Includes department IDs and department names
 
 ## 🎯 Business Question
 
-What is the average salary in each department? This infomation can influence further wage strategies to ensure satisfaction of the employees while keeping the business costs in mind.
+What is the average salary in each department? This information can influence further wage strategies to ensure satisfaction of the employees while keeping the business costs in mind.
 
 ## 🔍 Approach
 
@@ -185,7 +185,7 @@ WHERE rank_num = 1;
 
 📈 Overview of Findings:
 
-Legal department shown the highest average salary of 5273.5, while Customer Support team had the lowest average of 4414.0. Employees hired in 2024 have an average monthly pay of 5626.83 while new associates hired in 2025 have slightly lower average of 5512.5. Employees hired in 2022 have noticaebly low salary average of 3767.78. Half of the departments (4 out of 8) have a low participation in the voluntary retirement plan.
+Legal department shown the highest average salary of 5273.5, while Customer Support team had the lowest average of 4414.0. Employees hired in 2024 have an average monthly pay of 5626.83 while new associates hired in 2025 have slightly lower average of 5512.5. Employees hired in 2022 have noticeably low salary average of 3767.78. Half of the departments (4 out of 8) have a low participation in the voluntary retirement plan.
 
 💡 Key Insight:
 Evaluation of salaries across all departments can help in ensuring that wages are up to the industry and market standards. Year to year evaluations are necessary to keep employees' satisfaction and good business practices. Review of the existing work benefits is required to verify if they are meeting the needs of workers.
