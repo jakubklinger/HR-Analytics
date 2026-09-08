@@ -70,7 +70,7 @@ GROUP BY en."Department Name";
 <h2> 📊Number of employees hired each year </h2>
 
 ## 🎯Business Question
-How many employees were hired each year, and what does this reveal about workforce expansion or contraction? Answering that can influence company change their employment strategy.
+How many employees were hired each year, and what does this reveal about workforce expansion or contraction? Answering that can influence company's employment strategy.
 
 
 ## 🔍 Approach
