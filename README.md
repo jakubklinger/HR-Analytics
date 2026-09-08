@@ -21,7 +21,9 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 </ul>
 
 ## 📋 Files
-- database.sql
+- department_new.sql
+- employees_new.sql
+- salary_new.sql
 - queries.sql
 
 ## 🗄️ Tables
@@ -175,3 +177,11 @@ Wage
    FROM ranked_employees
 WHERE rank_num = 1;
 ```
+📈 Overview of Findings 
+
+📌 Business Impact: 
+💡 Key Insight
+
+Evaluation of salaries across all departments is an important step in 
+
+✉ ---Contact me--- For any questions, please contact me at jakub.klinger1996@gmail.com.
