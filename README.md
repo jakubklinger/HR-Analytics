@@ -27,10 +27,12 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 - queries.sql
 
 ## 🗄️ Tables
-Table	Description
-employees_new Stores employee details including name, department, and hire date
-salary_new 	Contains wage, compensation rate, and retirement plan participation
-department_new	Includes department IDs and department names
+
+| Table | Description |
+|---------|-------------|
+| `employees_new` |  Stores employee details including name, department, and hire date. |
+| `salary_new` | Contains wage, compensation rate, and retirement plan participation. |
+| `department_new` | Includes department IDs and department names. |
 
 ## 🛠️ Stack
 <ul>
