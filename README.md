@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 
 This project demonstrates SQL-based HR analytics using a fictional employee dataset.
-The goal is to evaluate salary distribution, hiring trends, department performance and retirement plan participation.
+The objective is to evaluate salary distribution, hiring trends, department performance and retirement plan participation.
 The analysis transforms raw HR data into insights supporting decisions in compensation strategy, workforce planning and benefits optimization.
 
 ## 🎯 Objectives
@@ -12,12 +12,12 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 <li>Analyze the salary across different departments</li>
 <li>Identify hiring trends over time</li>
 <li>Evaluate the participation in a retirement plan </li>
-<li>Apply intermediate SQL techniques including:
+<li>Apply intermediate SQL techniques, including:
     <li>Aggregations</li>
     <li>Multi-table JOINs</li>
     <li>Common Table Expressions (CTEs)</li>
-    <li> CASE WHEN - defining the results based on the condition </li>
-    <li>Window functions (ROW_NUMBER, ranking logic)</li>
+    <li> CASE WHEN - conditional logic </li>
+    <li>Window functions (ROW_NUMBER)</li>
 </ul>
 
 ## 📋 Files
@@ -42,7 +42,7 @@ The analysis transforms raw HR data into insights supporting decisions in compen
 <li>Microsoft Excel</li>
 </ul>
 
-## </> Example Queries
+## </> Analytical Queries & Business Insights
 
 <h2>📊 Average Salary by Department</h2>
 
@@ -187,9 +187,14 @@ WHERE rank_num = 1;
 
 📈 Overview of Findings:
 
-Legal department shown the highest average salary of 5273.5, while Customer Support team had the lowest average of 4414.0. Employees hired in 2024 have an average monthly pay of 5626.83 while new associates hired in 2025 have slightly lower average of 5512.5. Employees hired in 2022 have noticeably low salary average of 3767.78. Half of the departments (4 out of 8) have a low participation in the voluntary retirement plan.
+<ul>
+<li>Legal department shown the highest average salary of 5273.5, while Customer Support team had the lowest average of 4414.0</li>
+<li>Employees hired in 2024 have an average monthly pay of 5626.83 while new associates hired in 2025 have slightly lower average of 5512.5</li>
+<li>Employees hired in 2022 have noticeably low salary average of 3767.78</li>
+<li>Half of all departments (4 out of 8) have a low participation in the voluntary retirement plan</li>
+</ul>
 
 💡 Key Insight:
-Evaluation of salaries across all departments can help in ensuring that wages are up to the industry and market standards. Year to year evaluations are necessary to keep employees' satisfaction and good business practices. Review of the existing work benefits is required to verify if they are meeting the needs of workers.
+Consistent evaluation of salaries across all departments can help in ensuring that wages are up to the industry and market standards. Year to year evaluations are necessary to keep employees' satisfaction and good business practices. Review of the existing work benefits is required to verify if they align with employee needs.
 
 ✉ ---Contact me--- For any questions, please contact me at jakub.klinger1996@gmail.com.
